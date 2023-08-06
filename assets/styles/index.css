@@ -1,0 +1,327 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  background: #fff;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border-radius: 50px;
+  padding: 6px 15px;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+button:hover {
+  transform: scale(1.05);
+  filter: brightness(90%);
+  transition: 0.4s;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 35px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 700px) {
+  header {
+    padding: 15px 20px;
+  }
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav ul {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.81rem;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 500px) {
+  header nav ul {
+    font-size: 0.65rem;
+  }
+}
+header nav ul li {
+  margin: 0 15px;
+  position: relative;
+}
+header nav ul li:hover:before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  height: 2px;
+  background: green;
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  header nav ul li {
+    margin: 0 8px;
+  }
+}
+header nav img {
+  width: 50px;
+  margin-right: 25px;
+}
+@media screen and (max-width: 700px) {
+  header nav img {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header nav img {
+    width: 35px;
+  }
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 550px) {
+  header div button {
+    font-size: 0.65rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  header div button {
+    display: none;
+  }
+}
+header div button:nth-child(2) {
+  margin: 0 10px;
+}
+header div button:nth-child(2):hover {
+  background: green;
+  border: 2px solid green;
+  color: #fff;
+  transition: 0.4s;
+}
+header div button:nth-child(3) {
+  background: #000;
+  color: #fff;
+}
+header div img {
+  width: 20px;
+}
+@media screen and (max-width: 600px) {
+  header div img {
+    display: none;
+  }
+}
+
+main {
+  display: grid;
+  margin: 35px;
+  gap: 20px;
+}
+main .grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+@media screen and (max-width: 700px) {
+  main .grid button {
+    font-size: 0.6rem;
+    padding: 3px 6px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .grid button {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .grid {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+}
+main .grid .one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background: #1e3932;
+  color: #fff;
+  padding: 15px;
+}
+main .grid .one h2 {
+  padding: 25px 0;
+}
+@media screen and (max-width: 1000px) {
+  main .grid .one h2 {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .grid .one h2 {
+    padding: 10px 0;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .grid .one h2 {
+    padding: 10px 0;
+    font-size: 0.7rem;
+  }
+}
+main .grid .one button {
+  color: #fff;
+  border: 2px solid #fff;
+}
+@media screen and (max-width: 1000px) {
+  main .grid .one button {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  main .grid .one button {
+    font-size: 0.5rem;
+  }
+}
+main .grid .content2 {
+  background: #fa91aa;
+}
+main .grid .content3 {
+  background: #f06464;
+  color: #fff;
+}
+main .grid .content3 button {
+  color: #fff;
+  border: 2px solid #fff;
+}
+main .grid .content4 {
+  background: #faaa5a;
+}
+main .grid .content5 {
+  background: #9bf5b4;
+}
+main .grid .gridContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+main .grid .gridContent p {
+  padding: 25px 50px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 900px) {
+  main .grid .gridContent p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .grid .gridContent p {
+    font-size: 0.6rem;
+    padding: 10px 25px;
+  }
+}
+main .grid .gridContent h2 {
+  font-size: 3.1rem;
+  letter-spacing: 2px;
+  max-width: 80%;
+}
+@media screen and (max-width: 1100px) {
+  main .grid .gridContent h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  main .grid .gridContent h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  main .grid .gridContent h2 {
+    font-size: 1rem;
+  }
+}
+main .grid img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 100px;
+  margin: 0 auto;
+  text-align: left;
+  background: #000;
+  color: #fff;
+}
+@media screen and (max-width: 1000px) {
+  footer {
+    padding: 50px 40px;
+  }
+}
+@media screen and (max-width: 499px) {
+  footer {
+    display: none;
+  }
+}
+footer div {
+  margin: 0 30px;
+}
+@media screen and (max-width: 1000px) {
+  footer div {
+    margin: 0 15px;
+  }
+}
+@media screen and (max-width: 680px) {
+  footer div h3 {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  footer div h3 {
+    font-size: 0.7rem;
+  }
+}
+footer div ul {
+  color: #999;
+  padding-top: 15px;
+}
+@media screen and (max-width: 1000px) {
+  footer div ul {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 680px) {
+  footer div ul {
+    font-size: 0.56rem;
+  }
+}/*# sourceMappingURL=index.css.map */

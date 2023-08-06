@@ -1,0 +1,44 @@
+$white: #fff;
+$black: #000;
+$grey: #999;
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: $white;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    background: none;
+    border-radius: 50px;
+    padding: 6px 15px;
+    border: 2px solid $black;
+    cursor: pointer;
+
+    &:hover {
+        transform: scale(1.05);
+        filter: brightness(90%);
+        transition: 0.4s;
+    }
+}

@@ -1,0 +1,98 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 35px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+
+    @media screen and (max-width: 700px) {
+        padding: 15px 20px;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 0.81rem;
+            letter-spacing: 2px;
+
+            @media screen and (max-width: 500px) {
+                font-size: 0.65rem;
+            }
+
+            li {
+                margin: 0 15px;
+                position: relative;
+
+                &:hover:before {
+                    content: "";
+                    position: absolute;
+                    top: -8px;
+                    height: 2px;
+                    background: green;
+                    width: 100%;
+                }
+
+                @media screen and (max-width: 700px) {
+                    margin: 0 8px;
+                }
+            }
+        }
+
+        img {
+            width: 50px;
+            margin-right: 25px;
+
+            @media screen and (max-width: 700px) {
+                margin-right: 5px;
+            }
+
+            @media screen and (max-width: 500px) {
+                width: 35px;
+            }
+        }
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+
+        button {
+            @media screen and (max-width: 550px) {
+                font-size: 0.65rem;
+            }
+
+            @media screen and (max-width: 480px) {
+                display: none;
+            }
+        }
+
+        button:nth-child(2) {
+            margin: 0 10px;
+
+            &:hover{
+                background: green;
+                border: 2px solid green;
+                color: $white;
+                transition: 0.4s;
+            }
+        }
+
+        button:nth-child(3) {
+            background: $black;
+            color: $white;
+        }
+
+        img {
+            width: 20px;
+
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
+        }
+    }
+}
